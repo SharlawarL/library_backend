@@ -12,7 +12,9 @@
 	},
 	"require": {
 		"php": ">=5.3.7",
-		"guzzlehttp/guzzle": "^6.4"
+		"guzzlehttp/guzzle": "^6.4",
+		"doctrine/orm": "^2.6",
+		"doctrine/dbal": "^2.10"
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
