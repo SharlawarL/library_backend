@@ -219,7 +219,7 @@ class UserApi extends CI_Controller {
             {
                 //responce to Frontend
                 $data['success'] = true;
-                $data['message'] = "Successfully registered";
+                $data['message'] = "Successfully status changed";
                 $this->output
                         ->set_status_header(200)
                         ->set_content_type('application/json', 'utf-8')

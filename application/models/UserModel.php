@@ -86,17 +86,10 @@ class UserModel extends CI_Model {
 
     //change status
     function changeStatus($user){
-        echo $user['status'];
-        if($user['status'] == 'Active')
-        {
-            $data = array(
-                'status' => '1',
-            );
-        }else{
-            $data = array(
-                'status' => '0',
-            );
-        }
+        echo $user;
+        $data = array(
+            'status' => $user['status'],
+        );
         $id = $user['user_id'];
         $this->db->where('user_id',$id);
         $result = $this->db->update('User',$data);
